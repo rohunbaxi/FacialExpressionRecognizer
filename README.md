@@ -7,7 +7,6 @@ Upload a video of your choice or turn on your webcam.
 The algorithm tracks each frame individually and monitors changes in facial expression and updates the video live with a bounding box across the recognized face
 and the best available mood. 
 
-As you can see:
 ![image](https://user-images.githubusercontent.com/64387778/117415574-772bc380-aee6-11eb-9079-7f245a2671be.png)
 
 Download the repository for the best results, feel free to upload your own videos, and turn on your webcam to try it on yourself!
