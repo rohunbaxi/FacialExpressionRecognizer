@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Facial Expression Recognizer</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+      /* begin relevant CSS */
+      .blog-insert {
+        max-width: 100%;
+        text-align: center;
+        font-size: 0;
+      }
+      .blog-insert > * {
+        display: inline-block;
+        border: solid 4px #fff;
+        box-shadow: 0 0 20px #333;
+      }
+      .blog-insert img {
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .blog-insert a img {
+        width: 100%;
+      }
+      /* end relevant CSS */
+
+      body {
+        min-width: 600px;
+        margin: 20px;
+        font: 18px/1.3 'Noto Sans', sans-serif;
+        color: #444c5b;
+        background: #dee5eb linear-gradient(#acbecd 20%, #dee5eb) no-repeat;
+      }
+      a {
+        color: #ce4061;
+        text-decoration: none;
+      }
+      .intro {
+        margin: 0 auto 20px;
+        width: 560px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 28px;
+        line-height: 1;
+        text-align: center;
+      }
+      .vice {
+        margin: 0 auto;
+        width: 540px;
+        height: 500px;
+        padding: 0 20px;
+        border-left: solid 10px #ce4061;
+        border-right: solid 10px #ce4061;
+        animation: squeeze 5s infinite;
+      }
+      .text {
+        margin-top: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+      <div class="intro">
+        <h1>Facial Expression Recognition Model</h1>
+        Check your mood with a trained neural network that analyses your facial expression.
+        Due to Heroku's load limitations, download the open-source code from <a src = "https://github.com/rohunbaxi" target = "_blank">Github</a>
+        and deploy yourself in order to upload your own videos and check facial expressions using a better trained CNN. Make sure your videocam
+        is turned on!<br><br>
+        Created by Rohun Baxi using Python, Keras, and NumPy, and deployed using Flask.
+      </div>
+    <div class="vice">
+      <div class="blog-insert">
+        <img id = "bg" src="{{ url_for('video_feed') }}">
+      </div>
+      
+      <div class="text">
+        The trained model recognizes faces and captures expressions with an accuracy of about 84%
+      </div>
+    </div> 
+  </body>
+</html>
