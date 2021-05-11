@@ -1,4 +1,4 @@
-# FacialExpressionRecognizer
+# Facial Expression Recognizer
  Python app (built with Keras, Numpy, and deployed in Flask) that recognizes facial expressions from a webcam or video using a trained neural network
 
 To use, pip install all the dependencies from requirements.txt and run main.py
